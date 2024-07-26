@@ -22,7 +22,6 @@ router.post("/signup", async (req, res, next) => {
 		// and use the await keyword before them
 		const password = await bcrypt.hash(req.body.password, 10);
 		const user = await User.create({
-			username: req.body.username,
 			email: req.body.email,
 			password,
 		});
@@ -34,8 +33,8 @@ router.post("/signup", async (req, res, next) => {
 });
 
 // SIGN IN
-// POST /api/signin
-router.post("/signin", async (req, res, next) => {
+// POST /api/login
+router.post("/login", async (req, res, next) => {
 	try {
 		// Pass the user and the request to createUserToken
 		const user = await User.findOne({ email: req.body.email });
@@ -43,7 +42,7 @@ router.post("/signin", async (req, res, next) => {
 		// will be caught by our error handler or send back
 		// a token that we'll in turn send to the client.
 		const token = await createUserToken(req, user);
-		res.status(200).json({ token, username: user.username, userId: user._id });
+		res.status(200).json({ token, userId: user._id });
 	} catch (error) {
 		next(error);
 	}
