@@ -1,7 +1,7 @@
 // Dependencies
 const express = require("express");
 const app = express();
-app.set("port", process.env.PORT || 3001);
+app.set("port", process.env.PORT || 3002);
 const cors = require("cors");
 const eventController = require("./controllers/eventController");
 const userController = require("./controllers/userController");
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 // Controllers
-// Forward all requests to localhost:3001/api/events to the post controller
+// Forward all requests to localhost:3002/api/events to the post controller
 app.use("/api/events", eventController);
 app.use("/api", userController);
 

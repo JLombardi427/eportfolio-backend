@@ -1,4 +1,4 @@
-const mongoose = require("../db/connection");
+const mongoose = require("./connection");
 const seedData = require("./seeds.json");
 const Event = require("./models/Event");
 

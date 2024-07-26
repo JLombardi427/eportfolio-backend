@@ -32,19 +32,6 @@ router.get("/category/:category", async (req, res, next) => {
 	}
 });
 
-// Get events filtered by type
-// http://localhost:3001/api/events/type
-router.get("/type/:type", async (req, res, next) => {
-	try {
-		const events = await Event.find({ type: `${req.params.type}` }).populate(
-			"owner"
-		);
-		res.json(events);
-	} catch (error) {
-		next(error);
-	}
-});
-
 // get one event by id
 // http://localhost:3001/api/events/id
 router.get("/id/:id", async (req, res, next) => {
