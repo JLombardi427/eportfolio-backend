@@ -1,0 +1,17 @@
+[{
+	"name": "Birthday Party!",
+	"date": "07/26/2024",
+	"time": "7:00pm",
+	"date": "0-29-22",
+    "image": "https://i.imgur.com/0TecmaK.jpg",
+	"notes": "Don't forget to being the gift!",
+	"category": "Birthday",
+	"owner": {
+		"username": "user1",
+		"email": "email1@gmail.com",
+		"password": "user1"
+	}
+	
+}
+
+]
