@@ -1,3 +1,7 @@
+// Justin Lombardi
+// July 27th, 2024
+// Version 1.0
+
 // Dependencies
 const express = require("express");
 const app = express();
