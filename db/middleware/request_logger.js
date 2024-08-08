@@ -1,3 +1,7 @@
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
+//This processes the time and date of the request along with the information associated with the request.
 const requestLogger = function (req, res, next) {
 	console.log("\n===== Incoming Request =====\n");
 	console.log(`${new Date()}`);

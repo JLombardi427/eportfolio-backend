@@ -1,6 +1,6 @@
 // Justin Lombardi
-// July 27th, 2024
-// Version 1.0
+// August 8th, 2024
+// Version 2.0
 
 // Dependencies
 const express = require("express");
@@ -9,12 +9,12 @@ app.set("port", process.env.PORT || 3002);
 const cors = require("cors");
 const eventController = require("./controllers/eventController");
 const userController = require("./controllers/userController");
-const requestLogger = require("./db/middlewear/request_logger");
+const requestLogger = require("./db/middleware/request_logger");
 // Require the error handlers
 const {
 	handleErrors,
 	handleValidationErrors,
-} = require("./db/middlewear/custom_errors");
+} = require("./db/middleware/custom_errors");
 
 // Middleware
 app.use(express.json());

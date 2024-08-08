@@ -1,3 +1,8 @@
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
+
+//This is the schema that models the events and the information for each event card that will come through in the front end.
 const mongoose = require("../connection");
 const Schema = mongoose.Schema;
 

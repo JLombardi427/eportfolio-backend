@@ -1,7 +1,10 @@
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
 const express = require("express");
 const User = require("../db/models/User");
 const bcrypt = require("bcrypt");
-const { createUserToken } = require("../db/middlewear/auth");
+const { createUserToken } = require("../db/middleware/auth");
 
 const router = express.Router();
 

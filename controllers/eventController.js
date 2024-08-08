@@ -1,7 +1,11 @@
-//Require the express module
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
+
+//Require the express module and require the auth and custom_error files to handle tokens and errors in validation
 const express = require("express");
-const { requireToken } = require("../db/middlewear/auth");
-const { handleValidateOwnership } = require("../db/middlewear/custom_errors");
+const { requireToken } = require("../db/middleware/auth");
+const { handleValidateOwnership } = require("../db/middleware/custom_errors");
 
 //Import the event model
 const Event = require("../db/models/Event");

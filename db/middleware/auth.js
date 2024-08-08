@@ -1,3 +1,6 @@
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
 // Require the needed npm packages
 const passport = require("passport");
 const bcrypt = require("bcrypt");

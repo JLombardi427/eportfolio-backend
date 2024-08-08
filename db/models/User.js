@@ -1,3 +1,8 @@
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
+
+//This is the schema for the users and what is required when creating a user.
 const mongoose = require("../connection");
 const Schema = mongoose.Schema;
 

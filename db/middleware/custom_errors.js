@@ -1,3 +1,6 @@
+// Justin Lombardi
+// August 8th, 2024
+// Version 2.0
 // Require Mongoose so we can use it later in our handlers
 const mongoose = require("mongoose");
 
